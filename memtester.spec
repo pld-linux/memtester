@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.qcc.sk.ca/~charlesc/software/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	5b1c2d99a5f614f333d7e07a72922076
 URL:		http://www.qcc.sk.ca/~charlesc/software/%{name}/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
