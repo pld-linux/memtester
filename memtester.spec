@@ -2,7 +2,7 @@ Summary:	Userspace utility to test for faulty memory subsystem
 Summary(pl):	Narzêdzie z przestrzeniu u¿ytkownika do testowania podsystemu pamiêci
 Name:		memtester
 Version:	2.93.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.qcc.sk.ca/~charlesc/software/%{name}/%{name}-%{version}.tar.bz2
