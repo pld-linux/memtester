@@ -5,7 +5,7 @@ Name:		memtester
 Version:	%{date}
 Release:	1
 Copyright:	GNU
-Group:		Utility/System
+Group:		Utilities/System
 Group(pl):	Narzêdzia/System		
 Source:		memtester-%{date}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
