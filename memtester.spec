@@ -1,4 +1,4 @@
-%define date 19991116
+%define date 19991122
 Summary:	Utility to test for faulty memory
 Summary(pl):	Program do testowania pamiêci
 Name:		memtester
@@ -29,10 +29,12 @@ make CFLAGS="$RPM_OPT_FLAGS"
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_sbindir}
+install -d $RPM_BUILD_ROOT{%{_sbindir},%{_mandir}/man1}
 install -s memtest $RPM_BUILD_ROOT%{_sbindir}
 
-gzip -9nf ABOUT README.tests CHANGELOG TODO
+
+install memtest.1 $RPM_BUILD_ROOT%{_mandir}/man1
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* ABOUT README.tests CHANGELOG TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,3 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *gz
 %attr(755,root,root) %{_sbindir}/memtest
+%{_mandir}/man1/*
