@@ -1,12 +1,12 @@
 Summary:	Userspace utility to test for faulty memory subsystem
 Summary(pl):	Narzêdzie z przestrzeni u¿ytkownika do testowania podsystemu pamiêci
 Name:		memtester
-Version:	4.0.0
+Version:	4.0.2
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.qcc.sk.ca/~charlesc/software/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	f155671db3f96916d50a3d80188bc311
+# Source0-md5:	a3d5e8bda7abb6ca71e58754a93f7ed2
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,9 +32,10 @@ uztkownika root, ale nie jest to wymagane.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
 install memtester $RPM_BUILD_ROOT%{_bindir}
+install memtester.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,3 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README README.tests
 %attr(755,root,root) %{_bindir}/memtester
+%{_mandir}/man8/*
