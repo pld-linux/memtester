@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://www.qcc.sk.ca/~charlesc/software/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	3c971e11ca71cc8cd9d43b247170c243
-URL:		http://www.qcc.sk.ca/~charlesc/software/%{name}/
+URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
