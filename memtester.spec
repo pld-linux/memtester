@@ -13,21 +13,12 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 
-Copyright (C) 1999 Simon Kirby. Version 2 Copyright © 1999 Charles
-Cazabon.
 Memtest is a utility for testing the memory in a PC to determine if it
-is faulty. The original source was by Simon Kirby <sim@stormix.com>. I
-have by this time completely rewritten the original source, and added
-many additional tests to help catch borderline memory. I also rewrote
-the original tests (which catch mainly memory bits which are stuck
-permanently high or low) so that they run approximately an order of
-magnitude faster.
-
-
+is faulty.
 
 %description -l pl
 
-memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz okre¶lenia
+Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz okre¶lenia
 czy jest sprawna, czy te¿ nie.
 
 %prep
@@ -58,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 
-* Sat Nov 20 1999 Lukasz Trabinski <lukasz@lt.wsisiz.edu.pl>
+* Sat Nov 20 1999 £ukasz Tr±biñski <lukasz@lt.wsisiz.edu.pl>
 - change location memtest to /usr/sbin
 
 * Fri Nov 19 1999 £ukasz Tr±biñski <lukasz@lt.wsisiz.edu.pl>
