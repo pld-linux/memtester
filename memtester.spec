@@ -9,17 +9,14 @@ Group:		Utility/System
 Group(pl):	Narzedzia/System		
 Source:		memtester-%{date}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
+ExcludeArch:	%ix86
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-
-Memtest is a utility for testing the memory in a PC to determine if it
-is faulty.
-
 %description -l pl
-
-Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz okre¶lenia
-czy jest sprawna, czy te¿ nie.
+ Memtest is a utility for testing the memory in a PC to determine if it is 
+faulty.   Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz 
+okre¶lenia czy jest sprawna, czy te¿ nie.   
 
 %prep
 %setup -q -n memtester-%{date}
@@ -41,9 +38,9 @@ install TODO $RPM_BUILD_ROOT/usr/doc/memtester-%{date}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc {TODO,CHANGELOG,README.tests,ABOUT}
-%defattr(755, root, root)
+%defattr(644,root,root,755)
 /usr/sbin/memtest
 
 
