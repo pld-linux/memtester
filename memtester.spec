@@ -24,7 +24,7 @@ uztkownika root, ale nie jest to wymagane.
 %setup -q
 
 %build
-%{__make}
+%{__make} CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
