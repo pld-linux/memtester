@@ -1,4 +1,4 @@
-%define date 19991122
+%define date 19991206
 Summary:	Utility to test for faulty memory
 Summary(pl):	Program do testowania pamiêci
 Name:		memtester
@@ -9,7 +9,7 @@ Group:		Utility/System
 Group(pl):	Narzêdzia/System		
 Source:		memtester-%{date}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
-Exclusivearch:	%{ix86}
+#Exclusivearch:	%{ix86}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
