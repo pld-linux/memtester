@@ -1,13 +1,12 @@
-%define date 19991206
 Summary:	Utility to test for faulty memory
 Summary(pl):	Program do testowania pamiêci
 Name:		memtester
-Version:	%{date}
+Version:	2.93
 Release:	1
 Copyright:	GNU
 Group:		Utilities/System
 Group(pl):	Narzêdzia/System
-Source:		memtester-%{date}.tar.gz
+Source:		memtester-%{version}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
 Exclusivearch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +20,7 @@ Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz okre¶lenia
 czy jest sprawna, czy te¿ nie.
 
 %prep
-%setup -q -n memtester-%{date}
+%setup -q -n memtester-%{version}
 
 %build
 make CFLAGS="$RPM_OPT_FLAGS"
