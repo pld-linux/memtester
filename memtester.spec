@@ -34,13 +34,11 @@ install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install memtest $RPM_BUILD_ROOT%{_bindir}
 install memtest.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf CHANGELOG ABOUT README.tests
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CHANGELOG ABOUT README.tests
 %attr(755,root,root) %{_bindir}/memtest
 %{_mandir}/man1/*
