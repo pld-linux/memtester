@@ -16,10 +16,10 @@ It performs various types of tests to check for many possible error
 kinds. Running as root is prefferred, but not a must.
 
 %description -l pl
-Memtester jest programem testuj±cym podsytem pamiêci, dzia³aj±cym w
+Memtester jest programem testuj±cym podsystem pamiêci, dzia³aj±cym w
 przestrzeni u¿ytkownika. Wykonuje wiele ró¿nych rodzajów testów
 wy³apuj±cych ró¿ne typy b³êdów. Najlepiej jest uruchomiæ go z
-uztkownika root, ale nie jest to wymagane.
+u¿ytkownika root, ale nie jest to wymagane.
 
 %prep
 %setup -q
