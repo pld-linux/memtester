@@ -5,7 +5,7 @@ Version:	4.0.5
 Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	http://pyropus.ca/software/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://pyropus.ca/software/memtester/%{name}-%{version}.tar.gz
 # Source0-md5:	f6328b4863caf8f2013489c82c26cd1d
 URL:		http://pyropus.ca/software/memtester/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
