@@ -10,7 +10,7 @@ Group(pl):	Narzêdzia/System
 Source:		memtester-%{date}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
 Exclusivearch:	%{ix86}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Memtest is a utility for testing the memory in a PC to determine if it is
@@ -31,7 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_sbindir},%{_mandir}/man1}
 install -s memtest $RPM_BUILD_ROOT%{_sbindir}
-
 
 install memtest.1 $RPM_BUILD_ROOT%{_mandir}/man1
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* ABOUT README.tests CHANGELOG TODO
