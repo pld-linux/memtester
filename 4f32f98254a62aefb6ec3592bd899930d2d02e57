@@ -1,0 +1,7 @@
+- added missing %attr().
+
+* Sat Nov 20 1999 £ukasz Tr±biñski <lukasz@lt.wsisiz.edu.pl>
+- change location memtest to /usr/sbin
+
+* Fri Nov 19 1999 £ukasz Tr±biñski <lukasz@lt.wsisiz.edu.pl>
+- Make a spec file
