@@ -9,7 +9,7 @@ Group:		Utility/System
 Group(pl):	Narzedzia/System		
 Source:		memtester-%{date}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
-ExcludeArch:	%ix86
+Exclusivearch:	%{ix86}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -22,8 +22,7 @@ okre¶lenia czy jest sprawna, czy te¿ nie.
 %setup -q -n memtester-%{date}
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-make
+make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 install -d $RPM_BUILD_ROOT/usr/sbin
