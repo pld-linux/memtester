@@ -6,18 +6,18 @@ Release:	1
 Copyright:	GNU
 Group:		Utilities/System
 Group(pl):	Narzêdzia/System
-Source:		memtester-%{version}.tar.gz
+Source0:	memtester-%{version}.tar.gz
 URL:		http://www.qcc.sk.ca/~charlesc/software/memtester/
 Exclusivearch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Memtest is a utility for testing the memory in a PC to determine if it is
-faulty.
+Memtest is a utility for testing the memory in a PC to determine if it
+is faulty.
 
 %description -l pl
-Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz okre¶lenia
-czy jest sprawna, czy te¿ nie.
+Memtest jest programem s³u¿±cym do testowania pamiêci PC, oraz
+okre¶lenia czy jest sprawna, czy te¿ nie.
 
 %prep
 %setup -q -n memtester-%{version}
