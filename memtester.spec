@@ -38,9 +38,9 @@ CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 make
 
 %install
-install -d $RPM_BUILD_ROOT/usr/bin
+install -d $RPM_BUILD_ROOT/usr/sbin
 install -d $RPM_BUILD_ROOT/usr/doc/memtester-%{date}
-install -s memtest $RPM_BUILD_ROOT/usr/bin
+install -s memtest $RPM_BUILD_ROOT/usr/sbin
 install ABOUT $RPM_BUILD_ROOT/usr/doc/memtester-%{date}
 install README.tests $RPM_BUILD_ROOT/usr/doc/memtester-%{date}
 install CHANGELOG $RPM_BUILD_ROOT/usr/doc/memtester-%{date}
@@ -53,10 +53,13 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644, root, root, 755)
 %doc {TODO,CHANGELOG,README.tests,ABOUT}
 %defattr(755, root, root)
-/usr/bin/memtest
+/usr/sbin/memtest
 
 
 %changelog
+
+* Sat Nov 20 1999 Lukasz Trabinski <lukasz@lt.wsisiz.edu.pl>
+- change location memtest to /usr/sbin
 
 * Fri Nov 19 1999 £ukasz Tr±biñski <lukasz@lt.wsisiz.edu.pl>
 - Make a spec file
