@@ -5,8 +5,8 @@ Version:	2.93.1
 Release:	1
 License:	GPL
 Group:		Applications/System
-URL:		http://www.qcc.sk.ca/~charlesc/software/%{name}/
 Source0:	http://www.qcc.sk.ca/~charlesc/software/%{name}/%{name}-%{version}.tar.bz2
+URL:		http://www.qcc.sk.ca/~charlesc/software/%{name}/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,13 +24,15 @@ uztkownika root, ale nie jest to wymagane.
 %setup -q
 
 %build
-%{__make} CC="%{__cc}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install memtest $RPM_BUILD_ROOT%{_bindir}
 install memtest.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
