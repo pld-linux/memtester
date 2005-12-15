@@ -3,7 +3,7 @@ Summary(pl):	Narzêdzie do testowania podsystemu pamiêci
 Name:		memtester
 Version:	4.0.5
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/System
 Source0:	http://pyropus.ca/software/memtester/%{name}-%{version}.tar.gz
 # Source0-md5:	f6328b4863caf8f2013489c82c26cd1d
