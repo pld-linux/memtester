@@ -1,5 +1,5 @@
 Summary:	Userspace utility to test for faulty memory subsystem
-Summary(pl):	Narzêdzie do testowania podsystemu pamiêci
+Summary(pl.UTF-8):   NarzÄ™dzie do testowania podsystemu pamiÄ™ci
 Name:		memtester
 Version:	4.0.6
 Release:	1
@@ -15,11 +15,11 @@ Memtester is a userspace utility to test for memory subsytem errors.
 It performs various types of tests to check for many possible error
 kinds. Running as root is prefferred, but not a must.
 
-%description -l pl
-Memtester jest programem testuj±cym podsystem pamiêci, dzia³aj±cym w
-przestrzeni u¿ytkownika. Wykonuje wiele ró¿nych rodzajów testów
-wy³apuj±cych ró¿ne typy b³êdów. Najlepiej jest uruchomiæ go z
-u¿ytkownika root, ale nie jest to wymagane.
+%description -l pl.UTF-8
+Memtester jest programem testujÄ…cym podsystem pamiÄ™ci, dziaÅ‚ajÄ…cym w
+przestrzeni uÅ¼ytkownika. Wykonuje wiele rÃ³Å¼nych rodzajÃ³w testÃ³w
+wyÅ‚apujÄ…cych rÃ³Å¼ne typy bÅ‚Ä™dÃ³w. Najlepiej jest uruchomiÄ‡ go z
+uÅ¼ytkownika root, ale nie jest to wymagane.
 
 %prep
 %setup -q
