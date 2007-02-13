@@ -1,5 +1,5 @@
 Summary:	Userspace utility to test for faulty memory subsystem
-Summary(pl.UTF-8):   Narzędzie do testowania podsystemu pamięci
+Summary(pl.UTF-8):	Narzędzie do testowania podsystemu pamięci
 Name:		memtester
 Version:	4.0.6
 Release:	1
