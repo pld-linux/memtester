@@ -1,12 +1,13 @@
 Summary:	Userspace utility to test for faulty memory subsystem
 Summary(pl.UTF-8):	Narzędzie do testowania podsystemu pamięci
 Name:		memtester
-Version:	4.1.3
+# http://pyropus.ca/software/memtester/old-versions/memtester-4.2.0.tar.gz
+Version:	4.2.0
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://pyropus.ca/software/memtester/old-versions/%{name}-%{version}.tar.gz
-# Source0-md5:	e562451620cf5343016950462bc0dc38
+# Source0-md5:	bfc1bcc2f31e780574f81778b65faf26
 URL:		http://pyropus.ca/software/memtester/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
