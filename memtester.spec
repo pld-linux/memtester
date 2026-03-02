@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Narzędzie do testowania podsystemu pamięci
 Name:		memtester
 # http://pyropus.ca/software/memtester/old-versions/memtester-4.2.0.tar.gz
 Version:	4.2.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://pyropus.ca/software/memtester/old-versions/%{name}-%{version}.tar.gz
