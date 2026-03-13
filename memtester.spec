@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
 install memtester $RPM_BUILD_ROOT%{_bindir}
-install memtester.8 $RPM_BUILD_ROOT%{_mandir}/man8
+cp -p memtester.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS CHANGELOG README README.tests
 %attr(755,root,root) %{_bindir}/memtester
-%{_mandir}/man8/*
+%{_mandir}/man8/memtester.8*
